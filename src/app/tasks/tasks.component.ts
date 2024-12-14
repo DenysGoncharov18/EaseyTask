@@ -60,6 +60,16 @@ onCancelAddTask(){
   this.isAddingTask = false;
 }
 
+onAddTask(taskDate: NewTaskDate){
+  this.tasks.unshift({
+    id: new Date().getTime().toString(),
+    userId: this.userId,
+    title: taskDate.title,
+    summary: taskDate.summary,
+    dueDate: taskDate.date,
+  })
+  this.isAddingTask = false;
+}
 
 
 }
