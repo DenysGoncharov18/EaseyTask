@@ -11,15 +11,15 @@ import { Component , Input, Output, EventEmitter, output} from '@angular/core';
 // };
 
 import { User } from './user.model';
-import { CardComponent } from "../shared/card/card.component";
+//import { CardComponent } from "../shared/card/card.component";
 
 @Component({
   selector: 'app-user',
-  standalone: true,
+  standalone: false,
 
   templateUrl: './user.component.html',
   styleUrl: './user.component.css',
-  imports: [CardComponent]
+  //imports: [CardComponent]
 })
 export class UserComponent {
                                                 // selectedUser = signal(DUMMY_USERS[randomIndex]);
